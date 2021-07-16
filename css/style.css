@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', Times, serif;;
+}
+
+html {
+    scroll-behavior: smooth;
+        box-sizing: border-box;
+}
+
+body{
+    box-sizing:border-box;
+    padding-top: 11vh ;
+}
+
+
+#header-container{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+    height: 11vh;
+    padding: .50vh;
+    background-color:orange;
+}
+
+nav{
+    margin-right: 45px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 20px;
+    color: #000;
+}
+
+nav a:hover{
+    color:#fff
+}
+
+#carrinho{
+    height: 100%;
+    margin-left: 20px;
+}
+
+p{
+    color: #fff;
+    font-size:24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-container{
+    padding-top: 11vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-section-one{
+    height: 100vh;
+    background-image: url(../assets/bg.jpg);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+#black-friday{
+    height: 60%;
+    width: auto;
+}
+
+.background-section-two{
+    background-image: url(../assets/bg2.png);
+    background-size: 50% calc(100%/3);
+    background-attachment: fixed;
+}
+
+#produtos{
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 11vh;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 210vh;
+}
+
+.card{
+    margin: 2.5% 4vw 2.5% 4vw;
+    padding: 0 10px 0 10px;
+    background-color: rgb(53, 52, 52, .6);
+    border-radius: 10px;
+    height: 60vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-produto{
+    width: 50%;
+    height: 40%;
+}
+
+.product-name{
+    font-size: 30px;
+    color:orange;
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+.description{
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 22px;
+    cursor: default;
+}
+
+.price{
+    font-weight: 600;
+    font-size: 22px;
+    color: orange;
+    cursor: default;
+}
+
+.price2{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: default;
+}
+
+.btn-cadastro{
+    border: none;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #000;
+    font-size: 18px;
+    cursor:pointer;
+}
+
+.btn-cadastro:hover{
+    background-color: #000;
+    color: orange;
+}
+
+
+.background-section-three{
+    background-image: url(../assets/bg3.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container{
+    background: rgb(255, 166, 0, .9);
+    border-radius: 36px;
+    padding:25px;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+#content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    align-items: center ;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    width:75%;
+    height:40px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor:auto;
+    padding-left: 10px;
+}
+
+#content p{
+    color:black;
+    font-size:26px;
+}
+
+input:active{
+    box-shadow: none;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+    border:2px solid rgb(53, 52, 52);
+}
+
+input#cadastrar:hover{
+    background-color: grey;
+    color: #fff;
+}
+
+#cadastrar{
+    background-color: rgb(53, 52, 52);
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    cursor:pointer;
+    width: 25%;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#carregando{
+    font-size: 24px;
+    text-align: center;
+    text-align: center;
+}
+
+ #img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-loader{
+    width:18%
+}
+
+#pronto{
+    font-size: 24px;
+    text-align: center;
+}
+
+footer{
+    height: 4%;
+    padding: .50rem;
+    background-color: #000;
+    color: #fff;
+}
+
+footer p{
+    font-size: 20px;
+    margin: 0;
+  
+}
+
+address{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+address p{
+    margin-right:50px;
+}
+
+address p a{
+    color: orange;
+    padding-top: 5px;
+}
+
+address p a:hover{
+    color:#fff;
+}
+
+@media (max-width: 843px){
+    #produtos{
+        height: 400vh;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+    input#cadastrar{
+        width:50%;
+    }
+    footer p {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .card-container{
+        width:70%;
+    }
+}
